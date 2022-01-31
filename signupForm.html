@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp Form</title>
+</head>
+<body>
+    <div class="row">      
+        <div class="row-item">
+            <img class="img-style" src="assets/background-image.jpeg" />
+            <div class="logo-container">
+                <img class="logo-image" src="assets/odin-lined.png" />
+                <span class="logo-text">ODIN</span>
+            </div>
+        </div>
+        <div class="row-item column flex-size-2">
+            <div class="column-item background-grey">
+                <div class="banner-1"></div>
+                <div class="banner-1"></div>
+                <div class="banner-2 font-big">
+                    This is not a real online service! You know you need
+                    something<br>like this in your life to help realize your deepest dreams.<br>
+                    Sign up <span class="body-italic">now</span> to get started.
+                    <br><br>You <span class="body-italic">know</span> you want to.
+                </div>
+            </div>
+
+            <div class="column-item">
+                <form action="." method="post" class="form-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="font-big">Let's do this!</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="first-name">FIRST NAME</label><br>
+                                    <input type="text" size=30 id="first-name" name="first_name"/>
+                                </td>
+                    
+                                <td class="second-cell">
+                                    <label for="last-name">LAST NAME</label><br>
+                                    <input type="text" size=30 id="last-name" name="last_name" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">EMAIL</label><br>
+                                    <input type="email" size=30 id="email" name="email" />
+                                </td>
+                                
+                                <td class="second-cell">
+                                    <label for="phone-number">PHONE NUMBER</label><br>
+                                    <input type="tel" size=30 id="phone-number" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="password">PASSWORD</label><br>
+                                    <input type="password" size=30/><br>
+                                </td>
+                                
+                                <td class="second-cell">
+                                    <label for="confirm-password">CONFIRM PASSWORD</label><br>
+                                    <input type="password" size=30 onclick="inputPasswordHandler()"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="hide-error">*Passwords do not match</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            </div>
+
+            <div class="column-item background-grey">
+                <div class="login-section">
+                    <button type="submit" class="submit-button">
+                        <span class="login-text">Create Account</span>
+                    </button>
+                    <p>Already have an account?&nbsp;&nbsp;<a href="#">Log in</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    function inputPasswordHandler() {
+        console.log("Element is clicked.")
+        const errorMessage = document.querySelector('.hide-error');
+        errorMessage.classList.remove('hide-error');
+        errorMessage.classList.add('show-error');
+        console.log("Class list ", errorMessage.classList);
+    }
+</script>
+</html>

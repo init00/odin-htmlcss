@@ -1,0 +1,175 @@
+:root {
+    --background-color-1: beige;
+}
+
+
+@font-face {
+    font-family: 'odinFont';
+    src: url("fonts/Norse-Bold.otf");
+}
+
+html, 
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    margin: 0;
+}
+
+.img-style {
+    max-height: 100%;
+}
+
+.logo-container {
+    position: absolute;
+    background-color: bisque;
+    height: 15%;
+    top: 18.5%;
+    width: 33.99%;
+    display: flex;
+    background-color: black;
+    opacity: 0.6;
+
+}
+
+.logo-text {
+    align-self: center;
+    font-size: 4.5rem;
+    font-family: 'odinFont';
+    color: white;
+    justify-content: flex-start;
+}
+
+.logo-image {
+    height: 100%;
+    margin-left: 30%;
+    justify-content: flex-end;
+}
+
+.font-big {
+    font-size: 1.2rem;
+}
+
+.body-italic {
+    font-style: italic;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.row-item {
+    flex: 1;
+    align-self: stretch;
+}
+
+.flex-size-2 {
+    flex: 2;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    /* flex-basis: 0; */
+}
+
+.banner-1 {
+    flex: 1;
+}
+.banner-2 {
+    flex: 2;
+    font-weight: lighter;
+    margin-left: 5%;
+    padding-bottom: 2%;
+    margin-bottom: 4%;
+}
+
+.background-grey {
+    background-color: var(--background-color-1);
+}
+
+
+.form-table {
+    height: 100%;
+    font-size: 0.75rem;
+}
+
+.second-cell {
+    padding: 0px;
+}
+
+table {
+    width: 70%;
+    height: 100%;
+}
+
+th {
+    padding-left: -20px;
+}
+
+td {
+    padding: 0.5rem;
+    padding-left: 6%;
+}
+
+td > input {
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    height: 1.2rem;
+}
+
+td > input:focus {
+    outline: 1px solid blue;
+    border: none;
+    box-shadow: #E5E7EB;
+}
+
+input[type="password"]:focus {
+    outline: 1px solid red;
+    border: none;
+}
+
+.hide-error {
+    color: transparent;
+}
+
+.show-error {
+    color: red;
+}
+
+.login-section {
+    margin-left: 5%;
+}
+
+.submit-button {
+    border-radius: 5px;
+    height: 2.5rem;
+    background-color: #596D48;
+    border: none;
+    color: white;
+    margin-top: 5%;
+}
+
+.submit-button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em);
+}
+
+.login-text {
+    padding: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+a {
+    color: #596D48;
+}
